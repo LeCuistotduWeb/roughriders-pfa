@@ -1,0 +1,61 @@
+    .infos-park {
+        min-height: 700px;
+        padding-bottom: 50px;
+        background: url(../medias/bmp/bg-infos-park.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        h2 {
+            text-align: left;
+            margin-top: 70px;
+        }
+        h2::before {
+            display: none;
+        }
+        h2::after {
+            content: "";
+            width: 50px;
+            border-bottom: 2px solid $white;
+            display: block;
+            margin: 45px 0;
+        }
+        .map-content {
+            max-width: 800px;
+            max-height: 400px;
+            overflow: hidden;
+            margin: 0 0 50px 0;
+            padding: 0;
+            iframe {
+                min-width: 150px;
+                width: 100%;
+            }
+        }
+        .social-list {
+            padding: 0;
+            display: flex;
+            li {
+                padding-right: 20px;
+                :hover {
+                    color: $darkgray;
+                    transition-duration: 0.2s;
+                }
+            }
+            i {
+                text-align: center;
+                width: 45px;
+                height: 45px;
+                padding: 10px;
+                border: 2px $white solid;
+                border-radius: 50%;
+                font-size: 1.5em;
+            }
+        }
+    }
+    adress a:hover {
+        color: $darkgray;
+        transition-duration: 0.2s;
+    }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .contact-park h2{margin-top: 260px;}
+}

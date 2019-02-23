@@ -1,0 +1,19 @@
+/*horaires*/
+
+.horaires {
+    min-height: 600px;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column; 
+    align-self: center;
+    
+    background: url(../medias/bmp/bg-horaires.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.horaires-content{
+    margin-bottom: 20px;
+    min-width: 300px;
+    margin: 0 auto;
+}
